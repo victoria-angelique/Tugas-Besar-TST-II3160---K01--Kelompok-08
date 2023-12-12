@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class User extends Model
 {
-    protected $table            = 'users';
+    protected $table            = 'user';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
@@ -38,3 +38,5 @@ class User extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 }
+
+

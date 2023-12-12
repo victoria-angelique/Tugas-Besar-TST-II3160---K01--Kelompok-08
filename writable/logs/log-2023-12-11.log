@@ -1,0 +1,109 @@
+CRITICAL - 2023-12-11 10:10:39 --> Object of class App\Controllers\WahanaAPIController could not be converted to string
+in APPPATH\Controllers\WahanaAPIController.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WahanaAPIController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WahanaAPIController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\public\\index.php')
+CRITICAL - 2023-12-11 10:22:35 --> App\Models\Wahana::createWahana(): Argument #1 ($wahana_name) must be of type string, null given, called in C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\app\Controllers\WahanaAPIController.php on line 57
+in APPPATH\Models\Wahana.php on line 25.
+ 1 APPPATH\Controllers\WahanaAPIController.php(57): App\Models\Wahana->createWahana(null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WahanaAPIController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WahanaAPIController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\public\\index.php')
+CRITICAL - 2023-12-11 10:26:39 --> App\Models\Wahana::createWahana(): Argument #1 ($wahana_name) must be of type string, null given, called in C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\app\Controllers\WahanaAPIController.php on line 64
+in APPPATH\Models\Wahana.php on line 25.
+ 1 APPPATH\Controllers\WahanaAPIController.php(64): App\Models\Wahana->createWahana(null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WahanaAPIController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WahanaAPIController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\public\\index.php')
+CRITICAL - 2023-12-11 10:29:59 --> Undefined array key 0
+in APPPATH\Controllers\WahanaAPIController.php on line 59.
+ 1 APPPATH\Controllers\WahanaAPIController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\app\\Controllers\\WahanaAPIController.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WahanaAPIController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WahanaAPIController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\public\\index.php')
+CRITICAL - 2023-12-11 10:30:12 --> Undefined array key "kapasitas"
+in APPPATH\Controllers\WahanaAPIController.php on line 59.
+ 1 APPPATH\Controllers\WahanaAPIController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kapasitas"', 'C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\app\\Controllers\\WahanaAPIController.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WahanaAPIController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WahanaAPIController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\public\\index.php')
+CRITICAL - 2023-12-11 10:32:06 --> Undefined array key 0
+in APPPATH\Controllers\WahanaAPIController.php on line 58.
+ 1 APPPATH\Controllers\WahanaAPIController.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\app\\Controllers\\WahanaAPIController.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WahanaAPIController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WahanaAPIController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\public\\index.php')
+CRITICAL - 2023-12-11 10:32:40 --> Undefined array key 0
+in APPPATH\Controllers\WahanaAPIController.php on line 58.
+ 1 APPPATH\Controllers\WahanaAPIController.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\app\\Controllers\\WahanaAPIController.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WahanaAPIController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WahanaAPIController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\public\\index.php')
+CRITICAL - 2023-12-11 10:32:46 --> Undefined array key 0
+in APPPATH\Controllers\WahanaAPIController.php on line 58.
+ 1 APPPATH\Controllers\WahanaAPIController.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\app\\Controllers\\WahanaAPIController.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WahanaAPIController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WahanaAPIController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\public\\index.php')
+ERROR - 2023-12-11 10:34:33 --> mysqli_sql_exception: Unknown column 'wahana_name' in 'field list' in C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `wa...', 0)
+#1 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wa...')
+#2 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wa...')
+#3 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseBuilder.php(2301): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wa...', Array, false)
+#4 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Model.php(324): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\BaseModel.php(798): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Model.php(720): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\app\Models\Wahana.php(26): CodeIgniter\Model->insert(Array)
+#8 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\app\Controllers\WahanaAPIController.php(57): App\Models\Wahana->createWahana('Kuda-kudaan', 20)
+#9 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CodeIgniter.php(942): App\Controllers\WahanaAPIController->create()
+#10 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WahanaAPIController))
+#11 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Public...')
+#14 {main}
+CRITICAL - 2023-12-11 10:34:33 --> Unknown column 'wahana_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2301): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wahana` (`wahana_name`, `kapasitas`) VALUES (:wahana_name:, :kapasitas:)', [...], false)
+ 2 SYSTEMPATH\Model.php(324): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(798): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(720): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\Wahana.php(26): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\WahanaAPIController.php(57): App\Models\Wahana->createWahana('Kuda-kudaan', 20)
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WahanaAPIController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WahanaAPIController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\public\\index.php')
+CRITICAL - 2023-12-11 10:38:55 --> App\Models\Wahana::getWahanaById(): Argument #1 ($id) must be of type int, null given, called in C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\app\Controllers\WahanaAPIController.php on line 41
+in APPPATH\Models\Wahana.php on line 21.
+ 1 APPPATH\Controllers\WahanaAPIController.php(41): App\Models\Wahana->getWahanaById(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WahanaAPIController->show()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WahanaAPIController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\public\\index.php')
+CRITICAL - 2023-12-11 10:39:09 --> App\Models\Wahana::getWahanaById(): Argument #1 ($id) must be of type int, null given, called in C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\app\Controllers\WahanaAPIController.php on line 41
+in APPPATH\Models\Wahana.php on line 21.
+ 1 APPPATH\Controllers\WahanaAPIController.php(41): App\Models\Wahana->getWahanaById(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WahanaAPIController->show()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WahanaAPIController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\public\\index.php')

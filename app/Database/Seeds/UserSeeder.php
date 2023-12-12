@@ -9,7 +9,11 @@ class UserSeeder extends Seeder
     public function run()
     {
         $data = [
-            
+            [
+               'username' => 'Enji',
+               'password' => md5('enji'), 
+               'wahanaId' => 3
+            ]
         ];
 
         foreach ($data as $wahanaItem) {

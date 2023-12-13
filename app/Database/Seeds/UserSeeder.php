@@ -12,8 +12,28 @@ class UserSeeder extends Seeder
             [
                'username' => 'Enji',
                'password' => md5('enji'), 
-               'wahanaId' => 3
-            ]
+               'wahanaId' => 1
+            ],
+            [
+                'username' => 'Caris',
+                'password' => md5('caris'), 
+                'wahanaId' => 2
+            ],
+            [
+                'username' => 'Silvester',
+                'password' => md5('silvester'), 
+                'wahanaId' => 3
+            ],
+            [
+                'username' => 'Lala',
+                'password' => md5('lala'), 
+                'wahanaId' => 4
+            ],
+            [
+                'username' => 'Nana',
+                'password' => md5('Nana'), 
+                'wahanaId' => 5
+             ]
         ];
 
         foreach ($data as $wahanaItem) {

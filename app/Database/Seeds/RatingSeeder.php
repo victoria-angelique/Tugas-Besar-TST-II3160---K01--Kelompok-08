@@ -10,7 +10,7 @@ class RatingSeeder extends Seeder
     {
         for ($i=0; $i<50; $i++) {
             $this->db->table('rating')->insert([
-                'wahanaId' => rand(1, 3),
+                'wahanaId' => rand(1, 5),
                 'rating' => rand(1, 5),
             ]);
         }

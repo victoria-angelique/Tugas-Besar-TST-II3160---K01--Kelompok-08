@@ -10,16 +10,29 @@ class WahanaSeeder extends Seeder
     {
         $data = [
             [
-                'nama_wahana' => 'Rolerkoster',
+                'nama' => 'Rolerkoster',
                 'kapasitas' => 100,
+                'ratingWahana' => 5,
             ], 
             [
-                'nama_wahana' => 'Bianglala',
+                'nama' => 'Bianglala',
                 'kapasitas' => 70,
+                'ratingWahana' => 5,
             ],
             [
-                'nama_wahana' => 'Rumah Hantu',
+                'nama' => 'Rumah Hantu',
                 'kapasitas' => 120,
+                'ratingWahana' => 5,
+            ],
+            [
+                'nama' => 'Kora-Kora',
+                'kapasitas' => 110,
+                'ratingWahana' => 4,
+            ],
+            [
+                'nama' => 'Komedi Putar',
+                'kapasitas' => 80,
+                'ratingWahana' => 4,
             ]
         ];
 

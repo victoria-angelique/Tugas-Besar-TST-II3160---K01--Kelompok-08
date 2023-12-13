@@ -1,0 +1,194 @@
+ERROR - 2023-12-12 14:12:09 --> mysqli_sql_exception: Incorrect table definition; there can be only one auto column and it must be defined as a key in C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `w...', 0)
+#1 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `w...')
+#2 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `w...')
+#3 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `w...')
+#4 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\app\Database\Migrations\2023-12-11-092029_CreateWahanaTable.php(29): CodeIgniter\Database\Forge->createTable('wahana')
+#5 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(870): App\Database\Migrations\CreateWahanaTable->up()
+#6 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(185): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-12-12 14:12:57 --> mysqli_sql_exception: Incorrect table definition; there can be only one auto column and it must be defined as a key in C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `w...', 0)
+#1 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `w...')
+#2 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `w...')
+#3 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `w...')
+#4 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\app\Database\Migrations\2023-12-11-092029_CreateWahanaTable.php(29): CodeIgniter\Database\Forge->createTable('wahana')
+#5 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(870): App\Database\Migrations\CreateWahanaTable->up()
+#6 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(185): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-12-12 14:13:23 --> mysqli_sql_exception: Can't create table `wahanaku`.`user` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\app\Database\Migrations\2023-12-12-140214_CreateUserTable.php(31): CodeIgniter\Database\Forge->createTable('user')
+#5 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(870): App\Database\Migrations\CreateUserTable->up()
+#6 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(185): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-12-12 14:19:17 --> mysqli_sql_exception: Can't create table `wahanaku`.`user` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\app\Database\Migrations\2023-12-12-140214_CreateUserTable.php(33): CodeIgniter\Database\Forge->createTable('user')
+#5 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(870): App\Database\Migrations\CreateUserTable->up()
+#6 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(185): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-12-12 14:19:42 --> mysqli_sql_exception: Can't create table `wahanaku`.`user` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\app\Database\Migrations\2023-12-12-140214_CreateUserTable.php(31): CodeIgniter\Database\Forge->createTable('user')
+#5 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(870): App\Database\Migrations\CreateUserTable->up()
+#6 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(185): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-12-12 14:23:15 --> mysqli_sql_exception: Can't create table `wahanaku`.`user` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\app\Database\Migrations\2023-12-12-140214_CreateUserTable.php(31): CodeIgniter\Database\Forge->createTable('user')
+#5 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(870): App\Database\Migrations\CreateUserTable->up()
+#6 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(185): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-12-12 14:24:39 --> mysqli_sql_exception: Can't create table `wahanaku`.`user` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\app\Database\Migrations\2023-12-12-140214_CreateUserTable.php(31): CodeIgniter\Database\Forge->createTable('user')
+#5 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(870): App\Database\Migrations\CreateUserTable->up()
+#6 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(185): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-12-12 14:24:48 --> mysqli_sql_exception: Can't create table `wahanaku`.`rating` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `r...', 0)
+#1 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `r...')
+#2 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `r...')
+#3 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `r...')
+#4 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\app\Database\Migrations\2023-12-12-140227_CreateRatingTable.php(26): CodeIgniter\Database\Forge->createTable('rating')
+#5 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(870): App\Database\Migrations\CreateRatingTable->up()
+#6 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(185): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-12-12 14:28:11 --> mysqli_sql_exception: Can't create table `wahanaku`.`rating` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `r...', 0)
+#1 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `r...')
+#2 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `r...')
+#3 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `r...')
+#4 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\app\Database\Migrations\2023-12-12-140227_CreateRatingTable.php(26): CodeIgniter\Database\Forge->createTable('rating')
+#5 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(870): App\Database\Migrations\CreateRatingTable->up()
+#6 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(185): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-12-12 14:29:02 --> mysqli_sql_exception: Can't create table `wahanaku`.`rating` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `r...', 0)
+#1 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `r...')
+#2 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `r...')
+#3 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `r...')
+#4 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\app\Database\Migrations\2023-12-12-140227_CreateRatingTable.php(26): CodeIgniter\Database\Forge->createTable('rating')
+#5 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(870): App\Database\Migrations\CreateRatingTable->up()
+#6 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(185): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-12-12 14:29:30 --> mysqli_sql_exception: Can't create table `wahanaku`.`rating` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `r...', 0)
+#1 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `r...')
+#2 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `r...')
+#3 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `r...')
+#4 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\app\Database\Migrations\2023-12-12-140227_CreateRatingTable.php(26): CodeIgniter\Database\Forge->createTable('rating')
+#5 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(870): App\Database\Migrations\CreateRatingTable->up()
+#6 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(185): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-12-12 14:29:56 --> mysqli_sql_exception: Can't create table `wahanaku`.`user` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\app\Database\Migrations\2023-12-12-140214_CreateUserTable.php(31): CodeIgniter\Database\Forge->createTable('user')
+#5 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(870): App\Database\Migrations\CreateUserTable->up()
+#6 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MigrationRunner.php(185): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-12-12 14:36:14 --> mysqli_sql_exception: Unknown column 'nama_wahana' in 'field list' in C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `wa...', 0)
+#1 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wa...')
+#2 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wa...')
+#3 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseBuilder.php(2301): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wa...', Array, false)
+#4 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\app\Database\Seeds\WahanaSeeder.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\Seeder.php(145): App\Database\Seeds\WahanaSeeder->run()
+#6 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#8 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#9 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\spark(102): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-12-12 14:37:01 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`wahanaku`.`rating`, CONSTRAINT `rating_wahanaId_foreign` FOREIGN KEY (`wahanaId`) REFERENCES `wahana` (`wahanaId`)) in C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ra...', 0)
+#1 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ra...')
+#2 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ra...')
+#3 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\BaseBuilder.php(2301): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ra...', Array, false)
+#4 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\app\Database\Seeds\RatingSeeder.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Database\Seeder.php(145): App\Database\Seeds\RatingSeeder->run()
+#6 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#8 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#9 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\spark(102): CodeIgniter\CLI\Console->run()
+#10 {main}

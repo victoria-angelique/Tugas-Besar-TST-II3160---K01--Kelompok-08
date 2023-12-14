@@ -29,7 +29,7 @@ class Rating extends Model
     }
 
     public function calculateWahanaRating() {
-        return $this->select('rating.wahanaId, nama')->selectAvg('rating')->join('wahana', 'wahana.wahanaId = rating.wahanaId')->groupBy('wahana.wahanaId')->findAll();
+        return $this->select('rating.wahanaId, nama')->selectAvg('rating')->join('wahana', 'wahana.wahanaId = rating.wahanaId')->groupBy('wahana.wahanaId')->orderBy('rating')->findAll();
     }
     public function calculateWahanaRatingById(int $wahanaId) {
         return $this->select('rating.wahanaId, nama')->selectAvg('rating')->join('wahana', 'wahana.wahanaId = rating.wahanaId')->where('rating.wahanaId', $wahanaId)->groupBy('wahana.wahanaId')->findAll();

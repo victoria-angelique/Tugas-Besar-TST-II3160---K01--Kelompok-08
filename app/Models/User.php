@@ -6,35 +6,28 @@ use CodeIgniter\Model;
 
 class User extends Model
 {
-    protected $table            = 'users';
-    protected $primaryKey       = 'id';
+    protected $table            = 'user';
+    protected $primaryKey       = 'userId';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [];
 
-    // Dates
-    protected $useTimestamps = false;
-    protected $dateFormat    = 'datetime';
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'updated_at';
-    protected $deletedField  = 'deleted_at';
+    public function getAllUser() {
+        return $this->findAll();
+    }
 
-    // Validation
-    protected $validationRules      = [];
-    protected $validationMessages   = [];
-    protected $skipValidation       = false;
-    protected $cleanValidationRules = true;
+    public function getUserById(int $userId) {
+        return $this->find($userId);
+    }
 
-    // Callbacks
-    protected $allowCallbacks = true;
-    protected $beforeInsert   = [];
-    protected $afterInsert    = [];
-    protected $beforeUpdate   = [];
-    protected $afterUpdate    = [];
-    protected $beforeFind     = [];
-    protected $afterFind      = [];
-    protected $beforeDelete   = [];
-    protected $afterDelete    = [];
+    public function createUser(string $username, string $password, int $wahanaId) {
+        return $this->insert([
+            'username' => $username,
+            'password' => $password,
+            'wahanaId' => $wahanaId,
+        ]);
+    }
+    
 }

@@ -29,6 +29,6 @@ class CreateRatingTable extends Migration
 
     public function down()
     {
-        //
+        $this->forge->dropTable('rating');
     }
 }

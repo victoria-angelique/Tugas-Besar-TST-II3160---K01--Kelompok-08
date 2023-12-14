@@ -12,4 +12,7 @@ $routes->get('/api/wahana/(:num)', 'WahanaAPIController::show/$1'); // get wahan
 $routes->put('/api/wahana/(:num)', 'WahanaAPIController::update/$1'); // update wahana by id
 $routes->delete('/api/wahana/(:num)', 'WahanaAPIController::delete/$1'); // delete wahana by id
 
+$routes->get('/analytics', 'AnalyticsController::index');
+$routes->get('/api/analytics', 'AnalyticsAPIController::index');
+$routes->get('/api/analytics/(:num)', 'AnalyticsAPIController::show/$1');
 

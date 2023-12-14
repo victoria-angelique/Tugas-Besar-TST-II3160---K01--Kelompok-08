@@ -14,5 +14,11 @@ class RatingSeeder extends Seeder
                 'rating' => rand(1, 5),
             ]);
         }
+        for ($i=50; $i<200; $i++) {
+            $this->db->table('rating')->insert([
+                'wahanaId' => rand(4, 5),
+                'rating' => rand(1, 5),
+            ]);
+        }
     }
 }

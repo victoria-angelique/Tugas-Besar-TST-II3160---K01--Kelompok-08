@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class Wahana extends Model
 {
     protected $table            = 'wahana';
-    protected $primaryKey       = 'id';
+    protected $primaryKey       = 'wahanaId';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
@@ -18,14 +18,35 @@ class Wahana extends Model
         return $this->findAll();
     }
 
-    public function getWahanaById(int $id) {
-        return $this->find($id);
+    public function getWahanaById(int $wahanaId) {
+        return $this->find($wahanaId);
     }
 
-    public function createWahana(string $nama_wahana, int $kapasitas) {
+    public function createWahana(string $nama, int $kapasitas) {
         return $this->insert([
-            'nama_wahana' => $nama_wahana,
+            'nama' => $nama,
+            'kapasitas' => $kapasitas,
+            
+        ]);
+    }
+    
+    public function updateWahana(string $nama, int $kapasitas){
+        return $this->replace([
+            'nama' => $nama,
             'kapasitas' => $kapasitas,
         ]);
     }
+
+    public function updateWahanaRating(int $wahanaId, float $ratingWahana){
+        return $this->replace([
+            'wahanaId' => $wahanaId,
+            'ratingWahana' => $ratingWahana
+        ]);
+    }
+
+    public function deleteRating(int $wahanaId){
+        $this->delete(['wahanaId'=> $wahanaId
+        ]);
+    }
+        
 }

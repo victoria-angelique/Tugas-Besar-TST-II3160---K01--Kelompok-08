@@ -35,10 +35,10 @@ class WahanaAPIController extends ResourceController
      *
      * @return ResponseInterface
      */
-    public function show($id = null)
+    public function show($wahanaId = null)
     {
         $wahana = model(Wahana::class);
-        $data = $wahana->getWahanaById($id);
+        $data = $wahana->getWahanaById($wahanaId);
 
         if ($data == null) {
             $response = [
@@ -68,11 +68,11 @@ class WahanaAPIController extends ResourceController
         $wahana = model(Wahana::class);
         
         // ambil body di request
-        $nama_wahana = $this->request->getVar('nama_wahana');
+        $nama = $this->request->getVar('nama');
         $kapasitas = $this->request->getVar('kapasitas');
         
         // bikin wahananya
-        $data = $wahana->createWahana($nama_wahana, $kapasitas);
+        $data = $wahana->createWahana($nama, $kapasitas);
 
         $response = [
             'status' => 'success',
@@ -90,7 +90,7 @@ class WahanaAPIController extends ResourceController
      *
      * @return ResponseInterface
      */
-    public function update($id = null)
+    public function update($wahanaId = null)
     {
         //
     }
@@ -100,7 +100,7 @@ class WahanaAPIController extends ResourceController
      *
      * @return ResponseInterface
      */
-    public function delete($id = null)
+    public function delete($wahanaId = null)
     {
         //
     }

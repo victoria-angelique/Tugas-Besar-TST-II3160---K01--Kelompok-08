@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use CodeIgniter\RESTful\ResourceController;
 use CodeIgniter\HTTP\ResponseInterface;
+use App\Models\User;
 
 class AuthAPIController extends ResourceController
 {
@@ -75,5 +76,41 @@ class AuthAPIController extends ResourceController
     public function delete($id = null)
     {
         //
+    }
+
+    public function login_view()
+    {
+        return view('login');
+    }
+
+    public function login_action()
+    {
+        $session = session();
+        $userModel = new User();
+        $username = $this->request->getVar('username');
+        $password = md5($this->request->getVar('password'));
+
+        $data = $userModel->where('username', $username)->first();
+
+        if ($data) {
+            $pass = $data['password'];
+            $authenticatePassword = $password === $pass;
+            if ($authenticatePassword) {
+                $ses_data = [
+                    'id' => $data['userId'],
+                    'username' => $data['username'],
+                    'wahanaId' => $data['wahanaId'],
+                    'isLoggedIn' => TRUE
+                ];
+                $session->set($ses_data);
+                return redirect()->to('/');
+            } else {
+                $session->setFlashdata('msg', 'Password is incorrect.');
+                return redirect()->to('/login');
+            }
+        } else {
+            $session->setFlashdata('msg', 'Username does not exist.');
+            return redirect()->to('/login');
+        }
     }
 }

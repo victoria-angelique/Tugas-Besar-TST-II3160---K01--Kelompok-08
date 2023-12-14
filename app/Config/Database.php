@@ -26,10 +26,10 @@ class Database extends Config
      */
     public array $default = [
         'DSN'          => '',
-        'hostname'     => 'sql12.freesqldatabase.com',
-        'username'     => 'sql12668378',
-        'password'     => 'zySlC84I2e',
-        'database'     => 'sql12668378',
+        'hostname'     => '127.0.0.1',
+        'username'     => 'root',
+        'password'     => '',
+        'database'     => 'wahanaku',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,

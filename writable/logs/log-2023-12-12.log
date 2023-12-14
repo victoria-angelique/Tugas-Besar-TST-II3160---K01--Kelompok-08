@@ -192,3 +192,170 @@ Stack trace:
 #8 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
 #9 C:\Users\Public\OneDrive - Institut Teknologi Bandung\Desktop\Tugas-Besar-TST-II3160---K01--Kelompok-08\spark(102): CodeIgniter\CLI\Console->run()
 #10 {main}
+ERROR - 2023-12-12 16:14:40 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'wahanaku', 3306, '', 0)
+#1 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/Database/Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/Database/Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/Database/Seeder.php(96): CodeIgniter\Database\Config::forge(NULL)
+#5 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/Commands/Database/Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#6 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/Database/Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/Database/Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/Database/Seeder.php(96): CodeIgniter\Database\Config::forge(NULL)
+#4 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/Commands/Database/Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#5 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#6 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#7 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/spark(102): CodeIgniter\CLI\Console->run()
+#8 {main}
+CRITICAL - 2023-12-12 16:14:40 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH/Database/Seeder.php(96): CodeIgniter\Database\Config::forge(null)
+ 4 SYSTEMPATH/Commands/Database/Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 5 SYSTEMPATH/CLI/Commands.php(65): CodeIgniter\Commands\Database\Seed->run([])
+ 6 SYSTEMPATH/CLI/Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', [])
+ 7 ROOTPATH/spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-12-12 16:30:15 --> include(navbar.php): Failed to open stream: No such file or directory
+in APPPATH/Views/login.php on line 19.
+ 1 APPPATH/Views/login.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(navbar.php): Failed to open stream: No such file or directory', '/Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/app/Views/login.php', 19)
+ 2 APPPATH/Views/login.php(19): include()
+ 3 SYSTEMPATH/View/View.php(228): include('/Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/app/Views/login.php')
+ 4 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1172): CodeIgniter\View\View->render('login', [], true)
+ 6 APPPATH/Controllers/LoginController.php(6): view('login')
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\LoginController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/public/index.php')
+INFO - 2023-12-12 16:31:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-12 16:31:03 --> Call to undefined function set_value()
+in APPPATH/Views/login.php on line 43.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1172): CodeIgniter\View\View->render('login', [], true)
+ 4 APPPATH/Controllers/LoginController.php(6): view('login')
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\LoginController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/public/index.php')
+INFO - 2023-12-12 16:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-12 16:47:51 --> Call to undefined function set_value()
+in APPPATH/Views/login.php on line 43.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1172): CodeIgniter\View\View->render('login', [], true)
+ 4 APPPATH/Controllers/AuthAPIController.php(83): view('login')
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AuthAPIController->login_view()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthAPIController))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/public/index.php')
+INFO - 2023-12-12 16:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 16:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 16:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 16:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 16:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-12 16:50:54 --> mysqli_sql_exception: Table 'wahanaku.users' doesn't exist in /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/Database/BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/Model.php(269): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/BaseModel.php(672): CodeIgniter\Model->doFirst()
+#6 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/app/Controllers/AuthAPIController.php(93): CodeIgniter\BaseModel->first()
+#7 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/CodeIgniter.php(942): App\Controllers\AuthAPIController->login_action()
+#8 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthAPIController))
+#9 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/system/Commands/Server/rewrite.php(47): require_once('/Users/victoria...')
+#12 {main}
+CRITICAL - 2023-12-12 16:50:54 --> Table 'wahanaku.users' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Model.php(269): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(672): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/AuthAPIController.php(93): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AuthAPIController->login_action()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthAPIController))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/victoriaangelique/Desktop/II3160-K01-G08-Sistem Perpustakaan/public/index.php')
+INFO - 2023-12-12 16:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 16:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 16:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 16:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 16:51:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 16:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 16:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 16:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 16:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 16:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 16:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 16:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 16:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 16:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 16:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:06:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:07:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:07:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:08:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:08:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:09:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:11:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:13:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:15:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:15:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:16:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:17:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:17:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:17:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-12 17:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

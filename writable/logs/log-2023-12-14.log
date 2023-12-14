@@ -55,6 +55,7 @@ INFO - 2023-12-14 16:42:05 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-12-14 16:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-14 16:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-14 16:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+<<<<<<< HEAD
 INFO - 2023-12-14 17:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-14 17:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-14 17:36:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
@@ -124,3 +125,5 @@ INFO - 2023-12-14 18:12:59 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-12-14 18:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-14 18:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-14 18:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+=======
+>>>>>>> 4a7642f (add navbar, logout, and rating)

@@ -7,6 +7,9 @@
         <?php if (session()->get('isLoggedIn')) : ?>
         <div class="flex flex-row space-x-2 md:space-x-8">
             <button class="font-text font-semibold bg-[#FFFFFF] px-4 md:px-8 rounded-xl text-sm md:text-lg text-black py-2 my-auto hover:bg-[#F1F5F5]">home</button>
+            <form action="/rating" method="GET" class = "my-auto">
+                <button class="font-text font-semibold bg-[#FFFFFF] px-4 md:px-8 rounded-xl text-sm md:text-lg text-black py-2 my-auto hover:bg-[#F1F5F5]">rating</button>
+            </form>
             <form action="/logout" method="GET" class = "my-auto">
                 <button class="font-text font-semibold bg-[#FFFFFF] px-4 md:px-8 rounded-xl text-sm md:text-lg text-black py-2 hover:bg-[#F1F5F5]">sign out</button>
             </form>

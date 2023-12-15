@@ -1,0 +1,48 @@
+INFO - 2023-12-15 13:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 13:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 13:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 13:08:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-15 13:24:08 --> Undefined array key "nama"
+in APPPATH\Views\analytics.php on line 49.
+ 1 APPPATH\Views\analytics.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\app\\Views\\analytics.php', 49)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\app\\Views\\analytics.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1172): CodeIgniter\View\View->render('analytics', [], true)
+ 5 APPPATH\Controllers\AnalyticsController.php(24): view('analytics', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AnalyticsController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticsController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\public\\index.php')
+CRITICAL - 2023-12-15 14:22:40 --> Cannot access offset of type string on string
+in APPPATH\Controllers\AnalyticsController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AnalyticsController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticsController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\public\\index.php')
+CRITICAL - 2023-12-15 14:23:12 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\AnalyticsController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AnalyticsController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticsController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\public\\index.php')
+CRITICAL - 2023-12-15 14:24:22 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AnalyticsController.php on line 25.
+ 1 APPPATH\Controllers\AnalyticsController.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\app\\Controllers\\AnalyticsController.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AnalyticsController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticsController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\public\\index.php')
+CRITICAL - 2023-12-15 14:28:44 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\analytics.php on line 137.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1172): CodeIgniter\View\View->render('analytics', [], true)
+ 3 APPPATH\Controllers\AnalyticsController.php(31): view('analytics', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AnalyticsController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticsController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\public\\index.php')

@@ -15,36 +15,115 @@
     <script src="<?= base_url('js/chart.js') ?>" ></script>
 </head>
 
-<body>
-    <h1>Data Rating Wahana</h1>
+<nav class="navbar bg-base-100">
+    <div class="flex-1">
+        <a class="btn btn-ghost text-xl">Wahana Dududu World</a>
+    </div>
+    <div class="flex-none">
+        <ul class="menu menu-horizontal px-1">
+        <li><a>Home</a></li>
+        <li><a>Sign Out</a></li>
+        </ul>
+    </div>
+</nav>
+<body class="px-8">
+    <div class="overflow-x-auto">
+        <table class="table">
+            <!-- head -->
+            <thead>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>ID Wahana</th>
+                <th>Kapasitas</th>
+                <th>Rating</th>
+            </tr>
+            </thead>
+            <tbody>
 
-    <div class="w-30">
-        <canvas id="myChart"></canvas>
+            <?php foreach($wahana as $index=>$data): ?>
+                <tr>
+                    <th><?= esc($index)+1 ?></th>
+                    <td><?= esc($data['nama']) ?></td>
+                    <td><?= esc($data['wahanaId']) ?></td>
+                    <td><?= esc($data['kapasitas']) ?></td>
+                    <td><?= esc($data['ratingWahana']) ?></td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="my-8 flex flex-row gap-8">
+        <div>
+            <h2 class="text-xl font-bold">Rating Permainan</h2>
+            <div style="height: 300px; width: 600px; margin-top: 16px">
+                <canvas id="ratingChart"></canvas>
+            </div>
+        </div>
+        <div>
+            <h2 class="text-xl font-bold">Persebaran pemain terbanyak dari setiap kota</h2>
+            <div style="height: 300px; width: 800px; margin-top: 16px">
+                <canvas id="domisiliChart"></canvas>
+            </div>
+        </div>
     </div>
 
     <script>
-        const ctx = document.getElementById('myChart');
+        // ini ngambil elemennya
+        const ratingCtx = document.getElementById('ratingChart');
+        const domisiliCtx = document.getElementById('domisiliChart');
 
-        let data = [];
-        let labels = [];
+        let ratingData = [];
+        let ratingLabels = [];
+        let domisiliData = [];
+        let domisiliLabels = [];
         
         <?php if (!empty($analytics)): ?>
         <?php foreach ($analytics as $data):?>
-            labels.push('<?= esc($data['nama']) ?>')
-            data.push('<?= esc($data['rating']) ?>')
+            ratingLabels.push('<?= esc($data['nama']) ?>')
+            ratingData.push('<?= esc($data['rating']) ?>')
         <?php endforeach ?>
 
-        new Chart(ctx, {
+        
+        new Chart(ratingCtx, {
             type: 'bar',
             data: {
-            labels: labels,
+                labels: ratingLabels,
             datasets: [{
-                label: '# of Votes',
-                data: data,
+                label: 'Rating',
+                data: ratingData,
+                borderWidth: 1
+            }]
+        },
+        options: {
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+        <?php endif; ?>
+
+        <?php if (!empty($domisili)): ?>
+        <?php foreach ($domisili as $data):?>
+            domisiliLabels.push('<?= esc($data['asal_kota_pengunjung']) ?>')
+            domisiliData.push('<?= esc($data['total']) ?>')
+        <?php endforeach ?>
+        new Chart(domisiliCtx, {
+            type: 'bar',
+            data: {
+            labels: domisiliLabels,
+            datasets: [{
+                label: 'Jumlah Pemesanan',
+                data: domisiliData,
                 borderWidth: 1
             }]
             },
             options: {
+            maintainAspectRatio: false,
             scales: {
                 y: {
                 beginAtZero: true
@@ -52,7 +131,7 @@
             }
             }
         });
-        <?php endif; ?>
+    <?php endif; ?>
     </script>
 </body>
 

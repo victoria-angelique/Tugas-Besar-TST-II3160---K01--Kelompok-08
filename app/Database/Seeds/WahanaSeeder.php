@@ -23,6 +23,16 @@ class WahanaSeeder extends Seeder
                 'nama' => 'Rumah Hantu',
                 'kapasitas' => 120,
                 'ratingWahana' => 5,
+            ],
+            [
+                'nama' => 'Kora-Kora',
+                'kapasitas' => 110,
+                'ratingWahana' => 4,
+            ],
+            [
+                'nama' => 'Komedi Putar',
+                'kapasitas' => 80,
+                'ratingWahana' => 4,
             ]
         ];
 

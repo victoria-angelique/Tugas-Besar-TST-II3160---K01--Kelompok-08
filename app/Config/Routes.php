@@ -16,3 +16,7 @@ $routes->get('/', 'Home::index', ['filter' => 'authGuard']);
 $routes->get('/rating', 'RatingController::index');
 $routes->match(['get','post'], 'AuthAPIController/login_action', 'AuthAPIController::login_action');
 
+$routes->get('/analytics', 'AnalyticsController::index');
+$routes->get('/api/analytics', 'AnalyticsAPIController::index');
+$routes->get('/api/analytics/(:num)', 'AnalyticsAPIController::show/$1');
+

@@ -8,9 +8,9 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 
 $routes->get('/api/wahana/', 'WahanaAPIController::index'); // get all wahana
-$routes->post('/api/wahana/', 'WahanaAPIController::create'); // create wahana
+// $routes->post('/api/wahana/', 'WahanaAPIController::create'); // create wahana
 $routes->get('/api/wahana/(:num)', 'WahanaAPIController::show/$1'); // get wahana by id
-$routes->put('/api/wahana/(:num)', 'WahanaAPIController::update/$1'); // update wahana by id
+// $routes->put('/api/wahana/(:num)', 'WahanaAPIController::update/$1'); // update wahana by id
 
 $routes->get('/login', 'AuthAPIController::login_view');
 $routes->get('/logout', 'LoginController::logout');
@@ -20,4 +20,3 @@ $routes->match(['get','post'], 'AuthAPIController/login_action', 'AuthAPIControl
 $routes->get('/analytics', 'AnalyticsController::index');
 $routes->get('/api/analytics', 'AnalyticsAPIController::index');
 $routes->get('/api/analytics/(:num)', 'AnalyticsAPIController::show/$1');
-

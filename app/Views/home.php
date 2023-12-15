@@ -17,6 +17,37 @@
 <body>
     <div class="w-screen h-screen bg-[#FFFFFF]">
         <?php include 'navbar.php'; ?>
+        <div class="relative overflow-x-auto">
+            <table class = "table-auto">
+            <!-- <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"> -->
+                    <tr>
+                        <th class="px-6 py-3">
+                            ID Wahana
+                        </th>
+                        <th class="px-6 py-3">
+                            Nama Wahana
+                        </th>
+                        <th class="px-6 py-3">
+                            Kapasitas
+                        </th>
+                        <th class="px-6 py-3">
+                            Rating Wahana
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($wahana as $wahanaList) { ?>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-70">
+                            <td class= "px-6 py-4"><?php echo $wahanaList['wahanaId']; ?></td>
+                            <td class= "px-6 py-4"><?php echo $wahanaList['nama']; ?></td>
+                            <td class= "px-6 py-4"><?php echo $wahanaList['kapasitas']; ?></td>
+                            <td class= "px-6 py-4"><?php echo $wahanaList['ratingWahana']; ?></td>
+                        </tr>
+                    <?php } ?>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 

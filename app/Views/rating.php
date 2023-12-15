@@ -23,29 +23,31 @@
             <h2 class="text-3xl font-title font-bold tracking-tight text-black sm:text-4xl">Give Us Rating!</h2>
             <p class="mt-6 font-text text-lg leading-8 text-gray-400">Berikan penilaian terhadap wahana yang baru kamu mainkan.</p><br>
             <div class = "form-control">
+            <form action="<?php echo base_url(); ?>/api/rating" method="post">
                 <div class="flex flex-row space-x-4">
                         <div class="mx-4">
-                            <span class="font-title label-text">1 - Asyik</span> 
-                            <input type="radio" name="radio-10" class="radio checked:bg-red-500" checked />
+                            <span class="font-title label-text">1 - Tidak Asyik</span> 
+                            <input type="radio" name="rating" class="form-control radio checked:bg-red-500" value = 1 checked />
                         </div>
                         <div class="mx-4"> 
-                            <span class="font-tilte label-text">2 - Cukup Asyik</span> 
-                            <input type="radio" name="radio-10" class="radio checked:bg-blue-500" checked />
+                            <span class="font-tilte label-text">2 - Kurang Asyik</span> 
+                            <input type="radio" name="rating" class="form-control radio checked:bg-blue-500" value = 2 checked />
                         </div>
                         <div class="mx-4"> 
                             <span class="font-title label-text">3 - Biasa Aja</span> 
-                            <input type="radio" name="radio-10" class="radio checked:bg-blue-500" checked />
+                            <input type="radio" name="rating" class="form-control radio checked:bg-blue-500" value = 3 checked />
                         </div>
                         <div class="mx-4"> 
-                            <span class="font-title label-text">4 - Kurang Asyik</span> 
-                            <input type="radio" name="radio-10" class="radio checked:bg-blue-500" checked />
+                            <span class="font-title label-text">4 - Cukup Asyik</span> 
+                            <input type="radio" name="rating" class="form-control radio checked:bg-blue-500" value = 4 checked />
                         </div>
                         <div class="mx-4"> 
-                            <span class="font-title label-text">5 - Tidak Asyik</span> 
-                            <input type="radio" name="radio-10" class="radio checked:bg-blue-500" checked />
+                            <span class="font-title label-text">5 - Asyik</span> 
+                            <input type="radio" name="rating" class="form-control radio checked:bg-blue-500" value = 5 checked />
                         </div>
                 </div>
                 <button type="submit" class="font-text font-bold bg-[#555A6A] w-40 mt-4 rounded-md text-[#FFFFFF] py-2 mx-auto">submit</button>
+            </form>
             </div>
         </div>
         </div>

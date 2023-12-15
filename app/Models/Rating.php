@@ -12,7 +12,7 @@ class Rating extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['wahanaId', 'rating'];
 
     public function getAllRating() {
         return $this->findAll();
@@ -22,12 +22,13 @@ class Rating extends Model
         return $this->find($permainanId);
     }
     
-    public function createRating(int $rating){
+    public function createRating(int $rating, int $wahanaId) {
         return $this->insert([
-            'rating' => $rating
+            'rating' => $rating,
+            'wahanaId' => $wahanaId,
+            
         ]);
     }
-
     public function calculateWahanaRating() {
         return $this->select('rating.wahanaId, nama')->selectAvg('rating')->join('wahana', 'wahana.wahanaId = rating.wahanaId')->groupBy('wahana.wahanaId')->orderBy('rating')->findAll();
     }

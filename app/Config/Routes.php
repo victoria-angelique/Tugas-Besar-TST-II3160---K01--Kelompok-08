@@ -15,7 +15,8 @@ $routes->delete('/api/wahana/(:num)', 'WahanaAPIController::delete/$1'); // dele
 $routes->get('/', 'Home::index', ['filter' => 'authGuard']);
 $routes->get('/rating', 'RatingController::index');
 $routes->match(['get','post'], 'AuthAPIController/login_action', 'AuthAPIController::login_action');
-
+$routes->post('/api/rating/', 'RatingController::create'); //create rating
+$routes->get('/api/rating/', 'RatingController::get');
 $routes->get('/analytics', 'AnalyticsController::index');
 $routes->get('/api/analytics', 'AnalyticsAPIController::index');
 $routes->get('/api/analytics/(:num)', 'AnalyticsAPIController::show/$1');

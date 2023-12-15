@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Login</title>
+    <title>Rating</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css?v=1.0">
@@ -16,44 +16,38 @@
 
 <body>
     <div class="bg-white">
+    <?php include 'navbar.php'; ?>
     <div class="mx-auto max-w-screen-lg h-max py-24 sm:px-6 sm:py-32 lg:px-2">
         <div class="bg-FFFFFF px-2 pt-2 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:px-24 lg:pt-0">
-        <div class="mx-auto max-w-large text-center lg:mx-0 lg:py-32 lg:text-center">
-            <h2 class="text-3xl font-title font-bold tracking-tight text-black sm:text-4xl flex justify-center">Give Us Rating!</h2>
+        <div class="text-center mx-auto lg:py-32 lg:text-center flex justify-center items-center flex-col">
+            <h2 class="text-3xl font-title font-bold tracking-tight text-black sm:text-4xl">Give Us Rating!</h2>
             <p class="mt-6 font-text text-lg leading-8 text-gray-400">Berikan penilaian terhadap wahana yang baru kamu mainkan.</p><br>
-            <div class="flex justify-center">
-                <div class="form-control">
-                    <label class="label cursor-pointer">
-                        <span class="font-text label-text">1 - Asyik</span> 
-                        <input type="radio" name="radio-10" class="radio checked:bg-red-500 mx-8" checked />
-                    </label>
+            <div class = "form-control">
+                <div class="flex flex-row space-x-4">
+                        <div class="mx-4">
+                            <span class="font-title label-text">1 - Asyik</span> 
+                            <input type="radio" name="radio-10" class="radio checked:bg-red-500" checked />
+                        </div>
+                        <div class="mx-4"> 
+                            <span class="font-tilte label-text">2 - Cukup Asyik</span> 
+                            <input type="radio" name="radio-10" class="radio checked:bg-blue-500" checked />
+                        </div>
+                        <div class="mx-4"> 
+                            <span class="font-title label-text">3 - Biasa Aja</span> 
+                            <input type="radio" name="radio-10" class="radio checked:bg-blue-500" checked />
+                        </div>
+                        <div class="mx-4"> 
+                            <span class="font-title label-text">4 - Kurang Asyik</span> 
+                            <input type="radio" name="radio-10" class="radio checked:bg-blue-500" checked />
+                        </div>
+                        <div class="mx-4"> 
+                            <span class="font-title label-text">5 - Tidak Asyik</span> 
+                            <input type="radio" name="radio-10" class="radio checked:bg-blue-500" checked />
+                        </div>
                 </div>
-                <div class="form-control">
-                    <label class="label cursor-pointer"> 
-                        <span class="font-text label-text">2 - Cukup Asyik</span> 
-                        <input type="radio" name="radio-10" class="radio checked:bg-blue-500 mx-8" checked />
-                    </label>
-                </div>
-                <div class="form-control">
-                    <label class="label cursor-pointer"> 
-                        <span class="font-text label-text">3 - Biasa Aja</span> 
-                        <input type="radio" name="radio-10" class="radio checked:bg-blue-500 mx-8" checked />
-                    </label>
-                </div>
-                <div class="form-control">
-                    <label class="label cursor-pointer"> 
-                        <span class="label-text">4 - Kurang Asyik</span> 
-                        <input type="radio" name="radio-10" class="radio checked:bg-blue-500 mx-8" checked />
-                    </label>
-                </div>
-                <div class="form-control">
-                    <label class="label cursor-pointer"> 
-                        <span class="font-text label-text">5 - Tidak Asyik</span> 
-                        <input type="radio" name="radio-10" class="radio checked:bg-blue-500 mx-8" checked />
-                    </label>
-                </div>
+                <button type="submit" class="font-text font-bold bg-[#555A6A] w-40 mt-4 rounded-md text-[#FFFFFF] py-2 mx-auto">submit</button>
             </div>
-            </div>
+        </div>
         </div>
         </div>
     </div>

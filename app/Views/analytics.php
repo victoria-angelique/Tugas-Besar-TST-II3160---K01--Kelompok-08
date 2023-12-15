@@ -22,7 +22,7 @@
     <div class="flex-none">
         <ul class="menu menu-horizontal px-1">
         <li><a>Home</a></li>
-        <li><a>Sign Out</a></li>
+        <li><a href="/logout">Sign Out</a></li>
         </ul>
     </div>
 </nav>

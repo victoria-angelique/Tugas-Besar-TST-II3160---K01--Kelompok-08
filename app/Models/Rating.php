@@ -11,8 +11,7 @@ class Rating extends Model
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
-    protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $protectFields    = false;
 
     public function getAllRating() {
         return $this->findAll();
@@ -22,16 +21,20 @@ class Rating extends Model
         return $this->find($permainanId);
     }
     
-    public function createRating(int $rating){
-        return $this->insert([
+    public function createRating(int $wahanaId, int $rating){
+        $hasil = $this->insert([
+            'wahanaId' => $wahanaId,
             'rating' => $rating
         ]);
+
+        model(Wahana::class)->updateWahanaRating($wahanaId, $this->calculateWahanaRatingById($wahanaId)['rating']);
+        return $hasil;
     }
 
     public function calculateWahanaRating() {
         return $this->select('rating.wahanaId, nama')->selectAvg('rating')->join('wahana', 'wahana.wahanaId = rating.wahanaId')->groupBy('wahana.wahanaId')->orderBy('rating')->findAll(5);
     }
     public function calculateWahanaRatingById(int $wahanaId) {
-        return $this->select('rating.wahanaId, nama')->selectAvg('rating')->join('wahana', 'wahana.wahanaId = rating.wahanaId')->where('rating.wahanaId', $wahanaId)->groupBy('wahana.wahanaId')->findAll();
+        return $this->select('rating.wahanaId, nama')->selectAvg('rating')->join('wahana', 'wahana.wahanaId = rating.wahanaId')->where('rating.wahanaId', $wahanaId)->groupBy('wahana.wahanaId')->first();
     }
 }

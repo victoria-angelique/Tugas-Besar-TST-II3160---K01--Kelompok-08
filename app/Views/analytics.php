@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Login</title>
+    <title>Analytics</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css?v=1.0">
@@ -15,19 +15,11 @@
     <script src="<?= base_url('js/chart.js') ?>" ></script>
 </head>
 
-<nav class="navbar bg-base-100">
-    <div class="flex-1">
-        <a class="btn btn-ghost text-xl">Wahana Dududu World</a>
-    </div>
-    <div class="flex-none">
-        <ul class="menu menu-horizontal px-1">
-        <li><a>Home</a></li>
-        <li><a href="/logout">Sign Out</a></li>
-        </ul>
-    </div>
-</nav>
-<body class="px-8">
-    <div class="overflow-x-auto">
+
+<body>
+    <?php include 'navbar.php'; ?>
+    <div class="overflow-x-auto px-8">
+        <h2 class="text-3xl font-title font-bold tracking-tight text-black sm:text-4xl my-6 tracking-wide">Analytics</h2>
         <table class="table">
             <!-- head -->
             <thead>
@@ -40,21 +32,20 @@
             </tr>
             </thead>
             <tbody>
-
-            <?php foreach($wahana as $index=>$data): ?>
-                <tr>
-                    <th><?= esc($index)+1 ?></th>
-                    <td><?= esc($data['nama']) ?></td>
-                    <td><?= esc($data['wahanaId']) ?></td>
-                    <td><?= esc($data['kapasitas']) ?></td>
-                    <td><?= esc($data['ratingWahana']) ?></td>
-                </tr>
-            <?php endforeach; ?>
+                <?php foreach($wahana as $index=>$data): ?>
+                    <tr>
+                        <th><?= esc($index)+1 ?></th>
+                        <td><?= esc($data['nama']) ?></td>
+                        <td><?= esc($data['wahanaId']) ?></td>
+                        <td><?= esc($data['kapasitas']) ?></td>
+                        <td><?= esc($data['ratingWahana']) ?></td>
+                    </tr>
+                <?php endforeach; ?>
             </tbody>
         </table>
     </div>
 
-    <div class="my-8 flex flex-row gap-8">
+    <div class="my-8 flex flex-row gap-8 px-8">
         <div>
             <h2 class="text-xl font-bold">Rating Permainan</h2>
             <div style="height: 300px; width: 600px; margin-top: 16px">
@@ -63,7 +54,7 @@
         </div>
         <div>
             <h2 class="text-xl font-bold">Persebaran pemain terbanyak dari setiap kota</h2>
-            <div style="height: 300px; width: 800px; margin-top: 16px">
+            <div style="height: 300px; width: 700px; margin-top: 16px">
                 <canvas id="domisiliChart"></canvas>
             </div>
         </div>

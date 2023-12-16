@@ -12,9 +12,9 @@
             <form action="/rating" method="GET" class = "my-auto">
                 <button class="font-text font-semibold bg-[#FFFFFF] px-4 md:px-4 rounded-xl text-sm md:text-md text-black py-2 my-auto hover:bg-[#F1F5F5]">rating</button>
             </form>
-            <form action="/analytics" method="GET" class = "my-auto">
+            <!-- <form action="/analytics" method="GET" class = "my-auto">
                 <button class="font-text font-semibold bg-[#FFFFFF] px-4 md:px-4 rounded-xl text-sm md:text-md text-black py-2 my-auto hover:bg-[#F1F5F5]">analytics</button>
-            </form>
+            </form> -->
             <form action="/logout" method="GET" class = "my-auto">
                 <button class="font-text font-semibold bg-[#FFFFFF] px-4 md:px-4 rounded-xl text-sm md:text-md text-black py-2 hover:bg-[#F1F5F5]">sign out</button>
             </form>

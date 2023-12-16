@@ -1,0 +1,240 @@
+INFO - 2023-12-16 00:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 00:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 00:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 00:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 00:10:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-16 00:10:55 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'wahanaku', 3306, '', 0)
+#1 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/system/Database/BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/system/Model.php(269): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/system/BaseModel.php(672): CodeIgniter\Model->doFirst()
+#6 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/app/Controllers/AuthAPIController.php(93): CodeIgniter\BaseModel->first()
+#7 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/system/CodeIgniter.php(942): App\Controllers\AuthAPIController->login_action()
+#8 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthAPIController))
+#9 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/system/Commands/Server/rewrite.php(47): require_once('/Users/victoria...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/system/Database/BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/system/Model.php(269): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/system/BaseModel.php(672): CodeIgniter\Model->doFirst()
+#5 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/app/Controllers/AuthAPIController.php(93): CodeIgniter\BaseModel->first()
+#6 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/system/CodeIgniter.php(942): App\Controllers\AuthAPIController->login_action()
+#7 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthAPIController))
+#8 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/system/Commands/Server/rewrite.php(47): require_once('/Users/victoria...')
+#11 {main}
+CRITICAL - 2023-12-16 00:10:55 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(269): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(672): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/AuthAPIController.php(93): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AuthAPIController->login_action()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthAPIController))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/public/index.php')
+INFO - 2023-12-16 00:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 00:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 00:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 00:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-16 00:11:49 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/AnalyticsController.php on line 25.
+ 1 APPPATH/Controllers/AnalyticsController.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/app/Controllers/AnalyticsController.php', 25)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AnalyticsController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticsController))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/public/index.php')
+INFO - 2023-12-16 00:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 00:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 00:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 00:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-16 00:22:18 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/AnalyticsController.php on line 25.
+ 1 APPPATH/Controllers/AnalyticsController.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/app/Controllers/AnalyticsController.php', 25)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AnalyticsController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticsController))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/public/index.php')
+INFO - 2023-12-16 00:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 00:22:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 00:22:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 00:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 00:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 02:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 02:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 02:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-16 02:00:24 --> Undefined array key "data_reservasi"
+in APPPATH/Controllers/AnalyticsController.php on line 25.
+ 1 APPPATH/Controllers/AnalyticsController.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "data_reservasi"', '/Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/app/Controllers/AnalyticsController.php', 25)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AnalyticsController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticsController))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/public/index.php')
+INFO - 2023-12-16 02:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 02:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 02:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 02:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-16 02:02:04 --> Undefined array key "data_reservasi"
+in APPPATH/Controllers/AnalyticsController.php on line 25.
+ 1 APPPATH/Controllers/AnalyticsController.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "data_reservasi"', '/Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/app/Controllers/AnalyticsController.php', 25)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AnalyticsController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticsController))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/public/index.php')
+CRITICAL - 2023-12-16 02:03:07 --> Array to string conversion
+in APPPATH/Controllers/AnalyticsController.php on line 25.
+ 1 APPPATH/Controllers/AnalyticsController.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', '/Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/app/Controllers/AnalyticsController.php', 25)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AnalyticsController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticsController))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/public/index.php')
+CRITICAL - 2023-12-16 02:03:30 --> Call to undefined method App\Controllers\AnalyticsController::respond()
+in APPPATH/Controllers/AnalyticsController.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AnalyticsController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticsController))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/public/index.php')
+INFO - 2023-12-16 02:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 02:42:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-16 02:44:06 --> Undefined array key "data_reservasi"
+in APPPATH/Controllers/AnalyticsController.php on line 28.
+ 1 APPPATH/Controllers/AnalyticsController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "data_reservasi"', '/Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/app/Controllers/AnalyticsController.php', 28)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AnalyticsController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticsController))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/public/index.php')
+CRITICAL - 2023-12-16 02:44:11 --> Undefined array key "data_reservasi"
+in APPPATH/Controllers/AnalyticsController.php on line 33.
+ 1 APPPATH/Controllers/AnalyticsController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "data_reservasi"', '/Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/app/Controllers/AnalyticsController.php', 33)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AnalyticsController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticsController))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/public/index.php')
+INFO - 2023-12-16 02:44:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 02:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 02:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 02:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 02:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 02:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 02:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 02:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 02:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 02:48:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 02:48:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 09:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 09:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 09:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 09:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 09:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 09:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 09:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 09:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 09:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 09:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 09:46:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 09:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 09:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 09:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 09:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 10:20:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:48:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:48:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-16 12:51:35 --> App\Models\User::validatePassword(): Argument #1 ($username) must be of type string, null given, called in /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/app/Controllers/AnalyticsAPIController.php on line 22
+in APPPATH/Models/User.php on line 37.
+ 1 APPPATH/Controllers/AnalyticsAPIController.php(22): App\Models\User->validatePassword(null, null)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AnalyticsAPIController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticsAPIController))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/public/index.php')
+INFO - 2023-12-16 12:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-16 12:53:07 --> App\Models\User::validatePassword(): Argument #1 ($username) must be of type string, null given, called in /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/app/Controllers/WahanaAPIController.php on line 22
+in APPPATH/Models/User.php on line 37.
+ 1 APPPATH/Controllers/WahanaAPIController.php(22): App\Models\User->validatePassword(null, null)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\WahanaAPIController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WahanaAPIController))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/public/index.php')
+CRITICAL - 2023-12-16 12:54:04 --> App\Models\User::validatePassword(): Argument #1 ($username) must be of type string, null given, called in /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/app/Controllers/WahanaAPIController.php on line 22
+in APPPATH/Models/User.php on line 37.
+ 1 APPPATH/Controllers/WahanaAPIController.php(22): App\Models\User->validatePassword(null, null)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\WahanaAPIController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WahanaAPIController))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/public/index.php')
+CRITICAL - 2023-12-16 12:54:04 --> App\Models\User::validatePassword(): Argument #1 ($username) must be of type string, null given, called in /Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/app/Controllers/WahanaAPIController.php on line 22
+in APPPATH/Models/User.php on line 37.
+ 1 APPPATH/Controllers/WahanaAPIController.php(22): App\Models\User->validatePassword(null, null)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\WahanaAPIController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WahanaAPIController))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/victoriaangelique/Desktop/Tugas-Besar-TST-II3160---K01--Kelompok-08/public/index.php')
+INFO - 2023-12-16 12:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:56:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:57:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 12:59:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 13:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 13:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 13:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 13:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 13:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 13:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 13:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 13:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 13:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 13:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 13:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 13:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 14:15:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 14:15:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 14:15:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 14:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 14:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 14:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 14:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 14:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

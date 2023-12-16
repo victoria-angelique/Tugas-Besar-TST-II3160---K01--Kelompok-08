@@ -21,7 +21,7 @@ class RatingController extends ResourceController
         $ratingValue = $this->request->getVar('rating');
         
         // bikin rating
-        $data = $rating->createRating((int)$ratingValue,session()->get('wahanaId'));
+        $data = $rating->createRating(session()->get('wahanaId'), (int)$ratingValue);
 
         // $response = [
         //     'status' => 'success',

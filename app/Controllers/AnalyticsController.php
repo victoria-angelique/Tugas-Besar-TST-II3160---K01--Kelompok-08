@@ -16,18 +16,19 @@ class AnalyticsController extends BaseController
         $wahana = model(Wahana::class);
         $wahanaData = $wahana->getAllWahana();
 
-        $url = getenv('API_URL') . 'reservation/asal-kota-terbanyak';
+        $url = getenv('API_URL') . 'api/asal-kota-terbanyak?email=admin@gmail.com&password=admin';
         $curl = curl_init($url);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         $response = json_decode(curl_exec($curl), true);
         curl_close($curl);
 
-        $data_domisili = $response['data_reservasi'];
+        // dd($response);
+        $data_domisili = $response['data_kota_terbanyak'];
 
         if (sizeof($data_domisili) >= 6 ) {
-            $data['domisili'] = array_slice($response['data_reservasi'], 0, 6);
+            $data['domisili'] = array_slice($response['data_kota_terbanyak'], 0, 6);
         } else {
-            $data['domisili'] = $response['data_reservasi'];
+            $data['domisili'] = $response['data_kota_terbanyak'];
 
         }
         $data['analytics'] = $analytics;

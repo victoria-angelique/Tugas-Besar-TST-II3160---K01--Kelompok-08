@@ -30,16 +30,15 @@ class Wahana extends Model
         ]);
     }
     
-    public function updateWahana(string $nama, int $kapasitas){
-        return $this->replace([
+    public function updateWahana(int $wahanaId, string $nama, int $kapasitas){
+        return $this->update($wahanaId, [
             'nama' => $nama,
             'kapasitas' => $kapasitas,
         ]);
     }
 
     public function updateWahanaRating(int $wahanaId, float $ratingWahana){
-        return $this->replace([
-            'wahanaId' => $wahanaId,
+        return $this->update($wahanaId, [
             'ratingWahana' => $ratingWahana
         ]);
     }

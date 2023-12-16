@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\Rating;
+use App\Models\User;
 use CodeIgniter\RESTful\ResourceController;
 use CodeIgniter\HTTP\ResponseInterface;
 
@@ -15,6 +16,17 @@ class AnalyticsAPIController extends ResourceController
      */
     public function index()
     {
+        $username = $this->request->getVar('username');
+        $password = $this->request->getVar('password');
+
+        if (!model(User::class)->validatePassword($username, $password)) {
+            $response = [
+                'status' => 'error',
+                'message' => 'Credential salah!'
+            ];
+            return $this->respond($response, 403);
+        }
+
         $Analytics = model(Rating::class);
         $data = $Analytics->calculateWahanaRating();
 
@@ -37,6 +49,17 @@ class AnalyticsAPIController extends ResourceController
      */
     public function show($wahanaId = null)
     {
+        $username = $this->request->getVar('username');
+        $password = $this->request->getVar('password');
+
+        if (!model(User::class)->validatePassword($username, $password)) {
+            $response = [
+                'status' => 'error',
+                'message' => 'Credential salah!'
+            ];
+            return $this->respond($response, 403);
+        }
+        
         $Analytics = model(Rating::class);
         $data = $Analytics->calculateWahanaRatingById($wahanaId);
 

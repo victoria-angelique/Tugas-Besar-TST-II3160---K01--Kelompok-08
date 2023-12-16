@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\User;
 use App\Models\Wahana;
 use CodeIgniter\RESTful\ResourceController;
 use CodeIgniter\HTTP\ResponseInterface;
@@ -15,6 +16,17 @@ class WahanaAPIController extends ResourceController
      */
     public function index()
     {
+        $username = $this->request->getVar('username');
+        $password = $this->request->getVar('password');
+
+        if (!model(User::class)->validatePassword($username, $password)) {
+            $response = [
+                'status' => 'error',
+                'message' => 'Credential salah!'
+            ];
+            return $this->respond($response, 403);
+        }
+
         $wahana = model(Wahana::class);
         $data = $wahana->getAllWahana();
 
@@ -37,6 +49,17 @@ class WahanaAPIController extends ResourceController
      */
     public function show($wahanaId = null)
     {
+        $username = $this->request->getVar('username');
+        $password = $this->request->getVar('password');
+
+        if (!model(User::class)->validatePassword($username, $password)) {
+            $response = [
+                'status' => 'error',
+                'message' => 'Credential salah!'
+            ];
+            return $this->respond($response, 403);
+        }
+        
         $wahana = model(Wahana::class);
         $data = $wahana->getWahanaById($wahanaId);
 

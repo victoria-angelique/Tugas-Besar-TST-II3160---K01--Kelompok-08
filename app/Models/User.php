@@ -22,6 +22,10 @@ class User extends Model
         return $this->find($userId);
     }
 
+    public function getUserByUsername(string $username) {
+        return $this->where('username', $username)->first();
+    }
+
     public function createUser(string $username, string $password, int $wahanaId) {
         return $this->insert([
             'username' => $username,
@@ -30,4 +34,7 @@ class User extends Model
         ]);
     }
     
+    public function validatePassword(string $username, string $password) {
+        return $this->getUserByUsername($username)['password'] == md5($password);
+    }
 }

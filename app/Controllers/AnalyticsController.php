@@ -17,15 +17,13 @@ class AnalyticsController extends ResourceController
         $wahana = model(Wahana::class);
         $wahanaData = $wahana->getAllWahana();
 
-        $url = getenv('API_URL') . 'api/asal-kota-terbanyak';
+        $url = getenv('API_URL') . 'api/asal-kota-terbanyak?email=admin@gmail.com&password=admin';
         $curl = curl_init($url);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         $response = json_decode(curl_exec($curl), true);
         curl_close($curl);
 
-        // return $this->respond($response, 200);
-
-        $data_domisili = $response['data_kota_terbanyak'];
+        $data_domisili = $response['data_reservasi'];
 
         if (sizeof($data_domisili) >= 6 ) {
             $data['domisili'] = array_slice($response['data_kota_terbanyak'], 0, 6);

@@ -1,0 +1,13 @@
+INFO - 2023-12-16 14:29:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-16 14:29:26 --> Undefined array key "data_reservasi"
+in APPPATH\Controllers\AnalyticsController.php on line 26.
+ 1 APPPATH\Controllers\AnalyticsController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "data_reservasi"', 'C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\app\\Controllers\\AnalyticsController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AnalyticsController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnalyticsController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Public\\OneDrive - Institut Teknologi Bandung\\Desktop\\Tugas-Besar-TST-II3160---K01--Kelompok-08\\public\\index.php')
+INFO - 2023-12-16 14:29:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 14:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 14:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 14:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -23,7 +23,7 @@ class AnalyticsController extends ResourceController
         $response = json_decode(curl_exec($curl), true);
         curl_close($curl);
 
-        $data_domisili = $response['data_reservasi'];
+        $data_domisili = $response['data_kota_terbanyak'];
 
         if (sizeof($data_domisili) >= 6 ) {
             $data['domisili'] = array_slice($response['data_kota_terbanyak'], 0, 6);

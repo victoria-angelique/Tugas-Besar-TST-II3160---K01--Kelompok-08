@@ -12,7 +12,7 @@ stop:
 run:
 	docker-compose up -d
 copy-env:
-	cp .env.example .env
+	copy .env.example .env
 composer-setup:
 	docker exec wahanaku-app-1 bash -c "composer install"
 database-migrate:

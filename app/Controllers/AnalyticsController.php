@@ -20,17 +20,18 @@ class AnalyticsController extends ResourceController
         $url = getenv('API_URL') . 'api/asal-kota-terbanyak?email=admin@gmail.com&password=admin';
         $curl = curl_init($url);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-        $response = json_decode(curl_exec($curl), true);
+        $response = curl_exec($curl);
         curl_close($curl);
 
-        $data_domisili = $response['data_kota_terbanyak'];
-
-        if (sizeof($data_domisili) >= 6 ) {
-            $data['domisili'] = array_slice($response['data_kota_terbanyak'], 0, 6);
-        } else {
-            $data['domisili'] = $response['data_kota_terbanyak'];
-
+        if ($response != false) {
+            $data_domisili = json_decode($response, true)['data_kota_terbanyak'];
+            if (sizeof($data_domisili) >= 6 ) {
+                $data['domisili'] = array_slice($data_domisili, 0, 6);
+            } else {
+                $data['domisili'] = $data_domisili;
+            }
         }
+
         $data['analytics'] = $analytics;
         $data['wahana'] = $wahanaData;
 

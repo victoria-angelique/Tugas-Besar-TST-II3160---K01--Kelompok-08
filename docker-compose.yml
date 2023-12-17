@@ -1,0 +1,49 @@
+version: "3.8"
+name: wahanaku
+services:
+    # Application
+    app:
+        build:
+            context: ./docker/services/app
+            dockerfile: app.dockerfile
+        working_dir: /var/www
+        env_file: .env
+        volumes:
+            - ./:/var/www
+        networks:
+            - rw-network
+
+    # Web Server
+    web:
+        build:
+            context: ./docker/services/web
+            dockerfile: web.dockerfile
+        working_dir: /var/www
+        restart: always
+        volumes:
+            - ./:/var/www
+        ports:
+            - "8080:80"
+        networks:
+            - rw-network
+
+    # Database
+    database:
+        image: mysql:8.0.25
+        command:
+            --sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+        volumes:
+            - ./docker/volumes/mysql:/var/lib/mysql
+        environment:
+            MYSQL_DATABASE: wahanaku
+            MYSQL_ALLOW_EMPTY_PASSWORD: true
+            # MYSQL_USER: secret
+            # MYSQL_PASSWORD: secret
+        ports:
+            - "3306:3306"
+        networks:
+            - rw-network
+
+networks:
+    rw-network:
+        name: "reservasi-wahana-network"

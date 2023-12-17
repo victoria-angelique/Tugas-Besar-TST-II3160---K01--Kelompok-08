@@ -1,8 +1,8 @@
 setup:
+	@make composer-setup
 	@make copy-env
 	@make build
 	@make run
-	@make composer-setup
 	@make database-migrate
 	@echo Setup successful, website running on localhost:8080
 build:
@@ -14,7 +14,7 @@ run:
 copy-env:
 	copy .env.example .env
 composer-setup:
-	docker exec wahanaku-app-1 bash -c "composer install"
+	composer install
 database-migrate:
 	echo Starting database migration
 	docker exec -i wahanaku-database-1 bash -c "sleep 10"

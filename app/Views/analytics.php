@@ -62,10 +62,14 @@
             </div>
         </div>
         <div>
-            <h2 class="text-xl font-bold">Persebaran pemain terbanyak dari setiap kota</h2>
-            <div style="height: 300px; width: 800px; margin-top: 16px">
-                <canvas id="domisiliChart"></canvas>
-            </div>
+            <?php if(empty($domisili)): ?>
+                <h2 class="text-xl font-bold text-error">Sistem reservasi unreached!</h2>
+            <?php else: ?>
+                <h2 class="text-xl font-bold">Persebaran pemain terbanyak dari setiap kota</h2>
+                <div style="height: 300px; width: 800px; margin-top: 16px">
+                    <canvas id="domisiliChart"></canvas>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 

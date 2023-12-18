@@ -33,4 +33,5 @@ Sistem wahana dududu world juga menyediakan **Chart Wahana Terfavorit** dan **Ch
    php spark serve
    ```
 6. Selamat, kalian berhasil masuk ke dalam sistem wahana apabila di layar kalian sudah tertampil interface berikut
-   ![messageImage_1702401691414](https://github.com/victoria-angelique/Tugas-Besar-TST-II3160---K01--Kelompok-08/assets/91114869/b6c34925-7424-41c2-aa90-b4e8e2cde400)
+   ![messageImage_1702401691414](https://github.com/victoria-angelique/Tugas-Besar-TST-II3160---K01--Kelompok-08/assets/91114869/f2c15850-70dc-4b62-a8a9-01630351b68d)
+

@@ -12,7 +12,7 @@ Sistem wahana dududu world juga menyediakan **Chart Wahana Terfavorit** dan **Ch
 
  1. Clone repository berikut dengan link berikut ini
     ```sh
-    git clone https://github.com/your_username_/Project-Name.git
+    git clone [https://github.com/your_username_/Project-Name.git](https://github.com/victoria-angelique/Tugas-Besar-TST-II3160---K01--Kelompok-08.git)
     ```
 2. Pastikan **xampp** atau **manager osx** sudah berjalan dan terlampir gambar seperti berikut
    <img width="673" alt="Screenshot 2023-12-18 at 20 27 33" src="https://github.com/victoria-angelique/Tugas-Besar-TST-II3160---K01--Kelompok-08/assets/91114869/65be6ac8-9e93-4538-a8e1-1b4fc83ac20b">

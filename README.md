@@ -2,7 +2,7 @@
 
 ## Penjelasan sistem
 
-Sistem Manajemen Wahana menyediakan tampilan data wahana yang tersedia di taman Bermain Dududu World. Sistem Manajemen Wahana juga menyediakan fitur rating untuk user memberikan penilaian atas wahana yang sudah dimainkan. Fitur rating ini menyediakan penilaiaan dari angka 1-5 yang mana 5 artinya asyik dan 1 artinya tidak asyik.
+Sistem Manajemen Wahana menyediakan tampilan data wahana yang tersedia di taman Bermain Dududu World. Sistem Wahana ini menyediakan fitur rating untuk user memberikan penilaian atas wahana yang sudah dimainkan. Fitur rating ini menyediakan penilaiaan dari angka 1-5 yang mana 5 artinya asyik dan 1 artinya tidak asyik. Selain itu, juga terdapat fitur tampilan data chart dan tabel wahana yang dapat dilihat oleh user secara langsung pada homepage sistem ini.
 
 ## Fitur utama Sistem Wahana Dududu World
 

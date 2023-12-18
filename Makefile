@@ -38,8 +38,8 @@ composer-setup:
 	composer install
 migrate:
 	echo Starting database migration
-	docker exec reservasi-reservasi-app-1 bash -c "yes | php spark migrate:refresh"
+	docker exec wahanaku-wahanaku-app-1 bash -c "yes | php spark migrate:refresh"
 	echo Finished database migration
 	echo Starting database seeding
-	docker exec reservasi-reservasi-app-1 bash -c "php spark db:seed AllSeeder"
+	docker exec wahanaku-wahanaku-app-1 bash -c "php spark db:seed AllSeeder"
 	echo Finished database seeding

@@ -20,12 +20,12 @@ CPF := copy /y
 endif
 
 setup:
-	# @make composer-setup
+	@make composer-setup
 	@make copy-env
 	@make build
 	@make run
-	@make migrate
-	@echo Setup successful, website running on localhost:8080
+	# @make migrate
+	@echo Setup successful, website running on localhost:8081
 build:
 	docker-compose build --no-cache --force-rm
 stop:
@@ -38,8 +38,8 @@ composer-setup:
 	composer install
 migrate:
 	echo Starting database migration
-	docker exec wahanaku-wahanaku-app-1 bash -c "yes | php spark migrate:refresh"
+	docker exec reservasi-reservasi-app-1 bash -c "yes | php spark migrate:refresh"
 	echo Finished database migration
 	echo Starting database seeding
-	docker exec wahanaku-wahanaku-app-1 bash -c "php spark db:seed AllSeeder"
+	docker exec reservasi-reservasi-app-1 bash -c "php spark db:seed AllSeeder"
 	echo Finished database seeding

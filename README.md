@@ -16,5 +16,12 @@ Sistem wahana dududu world juga menyediakan **Chart Wahana Terfavorit** dan **Ch
    ```
 2. Pastikan **xampp** atau **manager osx** sudah berjalan dan terlampir gambar seperti berikut
    <img width="673" alt="Screenshot 2023-12-18 at 20 27 33" src="https://github.com/victoria-angelique/Tugas-Besar-TST-II3160---K01--Kelompok-08/assets/91114869/65be6ac8-9e93-4538-a8e1-1b4fc83ac20b">
-3. Buka link php myadmin http://localhost/phpmyadmin/ dengan web browser, kemudian buatlah database baru dengan nama wahanaku dengan click new sehingga terbuat database seperti berikut 
-![Uploading Screenshot 2023-12-18 at 20.30.31.png…]()
+3. Buka link **php myadmin** http://localhost/phpmyadmin/ (http://localhost/phpmyadmin/) dengan web browser, kemudian buatlah database baru dengan nama wahanaku dengan click new sehingga terbuat database seperti berikut
+4. Selanjutnya, fetch data dengan command berikut untuk memasukkan data seeder ke dalam database di php my admin tadi
+   ```sh
+   php spark migrate:refresh
+   ```
+```sh
+   php spark db:seed AllSeeder
+   ```
+5. Jalankan command berikut juga untuk menjalankan sistem di link localhost kalian menggunakan link berikut [http://localhost:8080/] (http://localhost:8080/)

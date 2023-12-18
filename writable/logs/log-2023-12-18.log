@@ -1,0 +1,19 @@
+ERROR - 2023-12-18 15:29:39 --> mysqli_sql_exception: Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'wahanaku.rating.permainanId' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `rating`...', 0)
+#1 /var/www/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rating`...')
+#2 /var/www/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rating`...')
+#3 /var/www/system/Database/BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT `rating`...', Array, false)
+#4 /var/www/system/Model.php(269): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/system/BaseModel.php(672): CodeIgniter\Model->doFirst()
+#6 /var/www/app/Models/Rating.php(38): CodeIgniter\BaseModel->first()
+#7 /var/www/app/Models/Rating.php(30): App\Models\Rating->calculateWahanaRatingById(2)
+#8 /var/www/app/Database/Seeds/RatingSeeder.php(15): App\Models\Rating->createRating(2, 2)
+#9 /var/www/system/Database/Seeder.php(145): App\Database\Seeds\RatingSeeder->run()
+#10 /var/www/app/Database/Seeds/AllSeeder.php(12): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#11 /var/www/system/Database/Seeder.php(145): App\Database\Seeds\AllSeeder->run()
+#12 /var/www/system/Commands/Database/Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#13 /var/www/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#14 /var/www/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#15 /var/www/spark(102): CodeIgniter\CLI\Console->run()
+#16 {main}

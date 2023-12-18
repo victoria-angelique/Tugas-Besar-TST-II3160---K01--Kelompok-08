@@ -17,7 +17,7 @@ class AnalyticsController extends ResourceController
         $wahana = model(Wahana::class);
         $wahanaData = $wahana->getAllWahana();
 
-        $url = getenv('API_URL') . 'api/asal-kota-terbanyak?email=admin@gmail.com&password=admin';
+        $url = getenv('TAKUTCOM_API_URL') . 'api/asal-kota-terbanyak?email=admin@gmail.com&password=admin';
         $curl = curl_init($url);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         $response = curl_exec($curl);

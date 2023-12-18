@@ -8,9 +8,11 @@ Sistem Manajemen Wahana menyediakan tampilan data wahana yang tersedia di taman 
 
 Sistem wahana dududu world juga menyediakan **Chart Wahana Terfavorit** dan **Chart Domisili Kota Pengunjung Terbanyak** yang didapat dari sistem reservasi Takut.com
 
+<!-- Panduan menjalankan Sistem -->
 ### Cara menjalankan sistem
 
  1. Clone repository berikut dengan link berikut ini
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
    ```
+2. 

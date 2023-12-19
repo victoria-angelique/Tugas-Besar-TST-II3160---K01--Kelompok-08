@@ -35,3 +35,23 @@ Sistem wahana dududu world juga menyediakan **Chart Wahana Terfavorit** dan **Ch
 6. Selamat, kalian berhasil masuk ke dalam sistem wahana apabila di layar kalian sudah tertampil interface berikut
    ![messageImage_1702401691414](https://github.com/victoria-angelique/Tugas-Besar-TST-II3160---K01--Kelompok-08/assets/91114869/f2c15850-70dc-4b62-a8a9-01630351b68d)
 
+### Cara menjalankan sistem dengan deployment docker
+
+ 1. Clone repository berikut dengan link berikut ini
+    ```sh
+    git clone (https://github.com/victoria-angelique/Tugas-Besar-TST-II3160---K01--Kelompok-08.git)
+    ```
+2. Buka command terminal anda dan tuliskan command berikut
+   ```sh
+   make setup
+   ```
+   Apabila make setup anda belum berjalan bisa melakukan instalasi GNU terlebih dahulu dengan panduan link berikut (https://leangaurav.medium.com/how-to-setup-install-gnu-make-on-windows-324480f1da69)
+5. Jalankan command berikutnya untuk menjalankan sistem 
+   ```sh
+   make migrate
+   ```
+   ```sh
+   make run
+   ```
+6. Selamat, anda bisa menjalankan sistem kami di link (http://localhost:8080/) dan apabila kalian berhasil masuk ke dalam sistem wahana apabila di layar kalian sudah tertampil interface berikut
+   ![messageImage_1702401691414](https://github.com/victoria-angelique/Tugas-Besar-TST-II3160---K01--Kelompok-08/assets/91114869/f2c15850-70dc-4b62-a8a9-01630351b68d)
